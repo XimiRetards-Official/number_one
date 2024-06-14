@@ -62,6 +62,10 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 target=`getprop ro.board.platform`
 if [ -f /sys/devices/soc0/soc_id ]; then
     soc_hwid=`cat /sys/devices/soc0/soc_id`
@@ -80,9 +84,9 @@ case "$target" in
         518|561|585|586)
         # Set property for khaje
         setprop vendor.display.disable_layer_stitch 1
-        #setprop vendor.display.enable_rounded_corner 1
-        #setprop vendor.display.disable_rounded_corner_thread 0
-        #setprop vendor.display.enable_rc_support 1
+        setprop vendor.display.enable_rounded_corner 0
+        setprop vendor.display.disable_rounded_corner_thread 1
+        setprop vendor.display.enable_rc_support 1
         setprop vendor.display.enable_perf_hint_large_comp_cycle 1
         ;;
     esac
@@ -93,6 +97,16 @@ case "$target" in
         434|459)
         #Set property for lagoon
         setprop vendor.display.enable_hdr10_gpu_target 1
+        ;;
+    esac
+    ;;
+    "trinket")
+    #set property for nicobar
+    case "$soc_hwid" in
+        394|468|467)
+        setprop vendor.gralloc.use_dma_buf_heaps 1
+        setprop vendor.display.disable_layer_stitch 1
+        setprop vendor.display.enable_perf_hint_large_comp_cycle 1
         ;;
     esac
     ;;

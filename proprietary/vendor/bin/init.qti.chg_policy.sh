@@ -52,4 +52,6 @@ if [ "$aon_present" -eq 1 ]; then
     exit 0
 fi
 
-setprop persist.vendor.hvdcp_opti.start 1
+# req SHK-6109,zhanghangzhou,20231108,modify,begin
+#setprop persist.vendor.hvdcp_opti.start 1
+# req SHK-6109,zhanghangzhou,20231108,modify,end

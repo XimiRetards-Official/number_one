@@ -44,6 +44,7 @@
     <packageinfo name="com.qti.qualcomm.deviceinfo" path="/system_ext/app/DeviceInfo" />
     <packageinfo name="com.qti.xdivert" path="/product/app/xdivert" />
     <packageinfo name="com.qualcomm.atfwd" path="/system_ext/app/atfwd" />
+    <packageinfo name="com.qualcomm.atfwd2" path="/system_ext/app/AtFwd2" />
     <packageinfo name="com.qualcomm.embms" path="/system_ext/app/embms" />
     <packageinfo name="com.qualcomm.embmstest" path="/system_ext/app/EmbmsTestApp" />
     <packageinfo name="com.qualcomm.qcrilmsgtunnel" path="/system_ext/priv-app/qcrilmsgtunnel" />

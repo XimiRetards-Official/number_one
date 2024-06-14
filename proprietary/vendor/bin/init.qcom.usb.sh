@@ -47,9 +47,6 @@ target=`getprop ro.board.platform`
 # Override USB default composition
 #
 # If USB persist config not set, set default configuration
-
-debuggable=`getprop ro.debuggable`
-
 if [ "$(getprop persist.vendor.usb.config)" == "" -a "$(getprop ro.build.type)" != "user" ]; then
     if [ "$esoc_name" != "" ]; then
 	  setprop persist.vendor.usb.config diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb
@@ -107,14 +104,7 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a "$(getprop ro.build.type)" 
 		          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,adb
 		      ;;
 	              "msmnile" | "sm6150" | "trinket" | "lito" | "atoll" | "bengal" | "lahaina" | "holi" | "taro" | "kalama" | "crow")
-                              case "$debuggable" in
-                                  "1")
-                                          setprop persist.vendor.usb.config adb
-                                          ;;
-                                  *)
-                                          setprop persist.vendor.usb.config none
-                                          ;;
-                                  esac
+			  setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,qdss,adb
 		      ;;
 	              *)
 		          setprop persist.vendor.usb.config diag,adb
@@ -176,14 +166,6 @@ if [ -d /config/usb_gadget ]; then
 	setprop vendor.usb.configfs 1
 fi
 
-# update product
-marketname=`getprop ro.product.marketname`
-if [ "$marketname" != "" ]; then
-    setprop vendor.usb.product_string "$marketname"
-else
-    setprop vendor.usb.product_string "$(getprop ro.product.model)"
-fi
-
 #
 # Initialize RNDIS Diag option. If unset, set it to 'none'.
 #
@@ -205,4 +187,8 @@ esac
 #
 if [ -d /config/usb_gadget/g1/functions/uvc.0 ]; then
 	setprop vendor.usb.uvc.function.init 1
+fi
+
+if [ -d /config/usb_gadget/g1/functions/uac2.0 ]; then
+	setprop vendor.usb.uac2.function.init 1
 fi

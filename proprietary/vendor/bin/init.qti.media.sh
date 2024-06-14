@@ -61,7 +61,7 @@ case "$target" in
         case "$soc_hwid" in
             568|602|581|582)
                 setprop vendor.media.target_variant "_ravelin"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q4450-37037-1"
                 fi
                 ;;
@@ -74,7 +74,7 @@ case "$target" in
                     setprop vendor.media.target_variant "_parrot_v1"
                 fi
 
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q6450-36256-1"
                 fi
                 ;;
@@ -93,25 +93,25 @@ case "$target" in
                     setprop vendor.media.target_variant "_diwali_v1"
                 fi
 
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q7450-35705-1"
                 fi
                 ;;
             591)
                 setprop vendor.media.target_variant "_ukee"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             530|531|540)
                 setprop vendor.media.target_variant "_cape"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_taro"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
@@ -136,7 +136,7 @@ case "$target" in
         esac
         ;;
     "bengal")
-        setprop vendor.mm.target.enable.qcom_parser 16711407
+        setprop vendor.mm.target.enable.qcom_parser 0
         case "$soc_hwid" in
             586)
                 setprop vendor.media.target_variant "_khaje_iot"

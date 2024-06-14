@@ -879,9 +879,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/init/vendor.qti.tftp_qmaa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp_qmaa.rc \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
-    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/14.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/14.0_config.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/13.0_config.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
@@ -889,6 +894,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/etc/qcril_database/upgrade/other/13_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/13_version_update_ecc_table.sql \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
     vendor/xiaomi/sm6225-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
@@ -1009,7 +1021,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
-    vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.gnss-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V4-ndk.so \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.gnss-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V5-ndk.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dpmservice@1.1.so \
@@ -1019,7 +1031,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd-V1-ndk.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
-    vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims-V9-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims-V9-ndk.so \
+    vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/xiaomi/sm6225-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.2.so \

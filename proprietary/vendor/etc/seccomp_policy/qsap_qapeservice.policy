@@ -84,6 +84,3 @@ recvmsg: 1
 
 # added for get gid
 getgid: 1
-
-# added for gettimeofday
-gettimeofday: 1
